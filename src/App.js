@@ -295,7 +295,7 @@ import ReportAllocation from "./Admin-pannel/Components/assetReport/assetAllocat
 import AssetRequest from "./Admin-pannel/Components/requestModule/assetrequest/AssetRequest";
 import AssetIssue from "./Admin-pannel/Components/requestModule/assetIssue/AssetIssue";
 import AllCustomerPage from "./Admin-pannel/Pages/allCustomer";
-import Shift from "./Admin-pannel/Components/crmNew/components/shift/Shift";
+// import Shift from "./Admin-pannel/Components/crmNew/components/shift/Shift";
 // import EditWholsaleProducts from "./Admin-pannel/Pages/editWholsaleProducts";
 import AddCustomer from "./Admin-pannel/Components/customerList/AddCustomer";
 import EditComboProducts from "./Admin-pannel/Pages/addComboProduct/EditComboProducts";
@@ -414,6 +414,12 @@ import AddUser from "./Admin-pannel/Components/user/addUser";
 
 import "../src/assets2/styles/main.css";
 import "../src/assets2/styles/responsive.css";
+import UserList from "./Admin-pannel/Components/user/user";
+import GetAllCust from "./Admin-pannel/Components/user/GetAllUser";
+import RolePermission from "./Admin-pannel/Components/role-Permissions/RolePermission";
+import Designation from "./Admin-pannel/Components/designation/Designation";
+import Desiginations from "./Admin-pannel/Components/designation/Designation";
+import EmploymentStatus from "./Admin-pannel/Components/EmploymentStatus/EmploymentStatus";
 // {Shaaz import end}
 
 // {daud import start}
@@ -429,6 +435,9 @@ import "../src/assets2/styles/responsive.css";
 // import CategoryMapPage from "./pages/categoryMap";
 // import CreateMap from "./components/amazon-account/categoryMap/createMap/CreateMap";
 // {daud import end}
+
+// junaid crm
+
 
 
 function App() {
@@ -907,10 +916,36 @@ function App() {
           />
 
           {/* junaid crm */}
+
           <Route
             path="staffs-new"
             element={<AddUser/>}
           />
+          <Route
+            path="userList"
+            element={<UserList/>}
+          />
+          <Route
+            path="staffscrm"
+            element={<GetAllCust/>}
+          />
+          <Route
+            path="role-Permissions"
+            element={<RolePermission/>}
+          />
+          <Route
+            path="designationcrm"
+            element={<Desiginations/>}
+          />
+          <Route
+            path="Employment-Status"
+            element={<EmploymentStatus/>}
+          />
+
+
+
+
+
           {/* {daud route end} */}
 
           {/* <Route path="crmDashboard" element={<NewDashboardCard />} />

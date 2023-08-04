@@ -581,8 +581,6 @@ function AsideAdmin() {
 
 
 
-
-
               <li className="aiz-side-nav-item">
                 {/* onMouseOut={() => { setWholsale(false) }}
                 onMouseOver={() => setWholsale(true)} */}
@@ -2133,15 +2131,36 @@ function AsideAdmin() {
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
-                    <Link to="#" className="aiz-side-nav-link ">
-                      <span className="labour-charge-type">CRM Dashboard</span>
+                    <Link to="userList" className="aiz-side-nav-link ">
+                      <span className="labour-charge-type">Employee List</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="staffscrm" className="aiz-side-nav-link ">
+                      <span className="aiz-side-nav-text">Shift</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="role-Permissions" className="aiz-side-nav-link ">
+                      <span className="aiz-side-nav-text">Role & Permissions</span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="designationcrm" className="aiz-side-nav-link ">
+                      <span className="aiz-side-nav-text">Designation </span>
+                    </Link>
+                  </li>
+                  <li className="aiz-side-nav-item">
+                    <Link to="Employment-Status" className="aiz-side-nav-link ">
+                      <span className="aiz-side-nav-text">Employment Status </span>
                     </Link>
                   </li>
                   <li className="aiz-side-nav-item">
                     <Link to="#" className="aiz-side-nav-link ">
-                      <span className="aiz-side-nav-text">Shift</span>
+                      <span className="labour-charge-type">CRM Dashboard</span>
                     </Link>
                   </li>
+
                   <li className="aiz-side-nav-item">
                     <Link to="#" className="aiz-side-nav-link ">
                       <span className="aiz-side-nav-text"> Contact </span>
